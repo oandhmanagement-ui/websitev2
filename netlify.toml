@@ -1,6 +1,6 @@
 [build]
   command = ""
-  publish = "Website/Website_O&H Management"
+  publish = "Website/O&H Management"
 
 [functions]
   directory = "netlify/functions"
