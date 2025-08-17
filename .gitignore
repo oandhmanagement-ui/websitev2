@@ -7,4 +7,5 @@ Website/Cursor/
 .backups/
 *.zip
 *.exe
+.netlify/
 

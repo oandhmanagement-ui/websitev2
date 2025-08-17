@@ -1,7 +1,9 @@
 [build]
-  publish = "Website/Website_O&H Mamnagement"
-  functions = "netlify/functions"
   command = ""
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"
 
 [[redirects]]
   from = "/api/*"
