@@ -1,0 +1,9 @@
+[build]
+  publish = "Website/Website_O&H Mamnagement"
+  functions = "netlify/functions"
+  command = ""
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200

@@ -1,0 +1,39 @@
+{
+  "name": "oh-management-chatbot",
+  "version": "1.0.0",
+  "description": "B2B Chatbot für O&H Management - Support, Terminbuchung & FAQ",
+  "main": "index.html",
+  "scripts": {
+    "build:rag": "node scripts/build-rag.mjs",
+    "test:chat": "curl -X POST https://your-site.netlify.app/.netlify/functions/chat -H 'Content-Type: application/json' -d '{\"message\":\"test\"}'",
+    "dev": "npx netlify dev",
+    "deploy": "netlify deploy --prod"
+  },
+  "dependencies": {
+    "openai": "^4.28.0"
+  },
+  "devDependencies": {
+    "@netlify/functions": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "chatbot",
+    "b2b",
+    "support",
+    "netlify",
+    "openai",
+    "rag"
+  ],
+  "author": "O&H Management",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/oh-management.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/oh-management/issues"
+  },
+  "homepage": "https://oh-management.at"
+}

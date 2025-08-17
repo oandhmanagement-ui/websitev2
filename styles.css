@@ -1,0 +1,93 @@
+/* styles.css */
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HERO SECTION - Einheitlich für alle Seiten */
+.hero {
+    border: none;
+    background-image: url('O&H Hintergrund.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin-left: 5vw;
+    text-align: left;
+    z-index: 2;
+    position: relative;
+}
+
+.hero-title {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.hero-background {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .hero { 
+        min-height: 40vh; 
+    }
+    .hero-content { 
+        max-width: 90vw; 
+        margin-left: 5vw; 
+    }
+    .hero-title { 
+        font-size: 2rem; 
+    }
+}
+
+@media (max-width: 600px) {
+    .hero { 
+        min-height: 30vh; 
+        padding: 2rem 0; 
+    }
+    .hero-content { 
+        margin-left: 3vw; 
+        max-width: 94vw; 
+    }
+    .hero-title { 
+        font-size: 1.5rem; 
+    }
+    .hero-subtitle { 
+        font-size: 1rem; 
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: #1e3a8a;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1e40af;
+}

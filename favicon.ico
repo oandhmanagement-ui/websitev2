@@ -1,0 +1,42 @@
+# Favicon für O&H Management
+
+Dies ist ein Platzhalter für das Favicon. 
+
+## Empfohlene Schritte für ein echtes Favicon:
+
+1. **Favicon erstellen**:
+   - Verwenden Sie das O&H Management Logo
+   - Größe: 32x32 Pixel für Standard-Favicon
+   - Format: .ico für beste Browser-Kompatibilität
+
+2. **Online-Tools**:
+   - favicon.io
+   - realfavicongenerator.net
+   - favicon-generator.org
+
+3. **Erforderliche Größen**:
+   - 16x16 (Standard)
+   - 32x32 (Standard)
+   - 48x48 (Windows)
+   - 180x180 (Apple Touch Icon)
+
+4. **Datei ersetzen**:
+   - Diese Datei durch echte favicon.ico ersetzen
+   - Oder HTML-Tag in index.html anpassen
+
+## Alternative: SVG-Favicon
+
+Für moderne Browser können Sie auch ein SVG-Favicon verwenden:
+
+```html
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+```
+
+## Automatische Generierung
+
+Sie können auch das bestehende Logo automatisch konvertieren lassen:
+
+1. Logo Image.png hochladen
+2. Favicon-Generator verwenden
+3. Alle Dateien herunterladen
+4. In Projekt-Ordner kopieren 

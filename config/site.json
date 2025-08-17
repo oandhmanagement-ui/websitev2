@@ -1,0 +1,24 @@
+{
+  "site": {
+    "name": "O&H Management",
+    "url": "https://oh-management.at",
+    "instagramUrl": "https://instagram.com/ohmanagement",
+    "contactEmail": "info@oh-management.at",
+    "contactFormUrl": "/kontakt.html"
+  },
+  "businessHours": {
+    "weekdays": "Mo–Fr 9–17 Uhr",
+    "weekend": "Sa–So geschlossen",
+    "holidays": "An Feiertagen geschlossen",
+    "chatAvailability": "24/7 verfügbar"
+  },
+  "services": {
+    "website": "SEO-optimierte Websites",
+    "seo": "SEO-Grundoptimierung", 
+    "maintenance": "Wartung & Updates",
+    "hosting": "Hosting & SSL",
+    "support": "E-Mail-Support",
+    "socialMedia": "Social Media Management",
+    "design": "Designleistungen"
+  }
+}

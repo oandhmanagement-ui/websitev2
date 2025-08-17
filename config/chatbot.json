@@ -1,0 +1,36 @@
+{
+  "ui": {
+    "welcomeMessage": "Willkommen, wie kann ich Ihnen weiterhelfen?",
+    "quickReplies": [
+      "Termin buchen",
+      "Leistungen",
+      "Kontakt",
+      "Preise",
+      "Über uns"
+    ],
+    "maxHistory": 10,
+    "typingDelay": 600,
+    "fallbackAttempts": 3
+  },
+  "branding": {
+    "logoPath": "/assets/logo-convertible.svg",
+    "primaryColor": "#111",
+    "backgroundColor": "#fff",
+    "textColor": "#1a1a1a"
+  },
+  "responses": {
+    "fallback": "Ich verbinde Sie gern mit unserem Team. Sie können uns direkt kontaktieren oder einen Termin vereinbaren.",
+    "handoff": "Ich leite Sie gern an unser Team weiter. Sie erreichen uns unter info@oh-management.at oder über unser Kontaktformular.",
+    "error": "Entschuldigung, es gab ein technisches Problem. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt."
+  },
+  "analytics": {
+    "enabled": true,
+    "events": {
+      "bot_open": "bot_open",
+      "message_sent": "message_sent", 
+      "reply_stream": "reply_stream",
+      "cta_click": "cta_click",
+      "handoff_initiated": "handoff_initiated"
+    }
+  }
+}
