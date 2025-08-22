@@ -719,6 +719,16 @@ section {
         display: none;
     }
 
+    /* Footer responsive adjustments */
+    .footer {
+        padding: 2rem 0 1rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+
 
 }
 
@@ -751,6 +761,17 @@ section {
     .leistungen-grid,
     .projekte-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* Footer responsive for small mobile */
+    .footer-content {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1rem;
+    }
+    
+    .footer-section h4 {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
     }
 
 
@@ -795,6 +816,20 @@ section {
         border-radius: 50px;
         max-width: calc(100% - 20px);
         margin: 0 10px;
+    }
+
+    /* Footer responsive for very small mobile */
+    .footer {
+        padding: 1.5rem 0 1rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .footer-section {
+        text-align: center;
     }
 
 
@@ -870,5 +905,162 @@ a:focus {
     outline-offset: 2px;
 }
 
+/* ===== Trust-Row: Final Version ===== */
+.trust-row {
+  border-top: 1px solid rgba(0,0,0,.06);
+  margin-top: 32px;
+  margin-bottom: 40px;
+  padding: 16px 0 8px;
+  background: transparent;
+}
+.trust-row-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.trust-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 110px;
+}
+.trust-item img {
+  display: block;
+  max-height: 52px;
+  height: clamp(42px, 4.5vw, 52px);
+  margin-bottom: 6px;
+  filter: grayscale(100%) opacity(0.85);
+  transition: filter .2s, opacity .2s;
+}
+.trust-item:hover img {
+  filter: none;
+  opacity: 1;
+}
+.trust-item .microcopy {
+  font-size: 11px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.55);
+  margin-top: 0;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+}
+/* Text-Badge "Made in Austria" */
+.trust-item.made-in-at {
+  justify-content: center;
+  min-height: 32px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.04);
+  color: rgba(255,255,255,0.55);
+  font-size: 13px;
+  line-height: 20px;
+  transition: background .2s, color .2s;
+}
+.trust-item.made-in-at:hover {
+  background: rgba(0,0,0,.08);
+  color: rgba(255,255,255,0.55);
+}
+/* Tablet & Small Desktop */
+@media (max-width: 1024px) {
+  .trust-row-inner {
+    gap: 28px;
+    max-width: 900px;
+  }
+  .trust-item img {
+    max-height: 48px;
+    height: clamp(38px, 5vw, 48px);
+  }
+}
 
+/* Tablet */
+@media (max-width: 768px) {
+  .trust-row-inner {
+    gap: 24px;
+    max-width: 800px;
+  }
+  .trust-item {
+    min-width: 100px;
+  }
+  .trust-item img {
+    max-height: 44px;
+    height: clamp(36px, 6vw, 44px);
+  }
+  .trust-item .microcopy {
+    font-size: 10px;
+  }
+  .trust-item.made-in-at {
+    font-size: 12px;
+    padding: 5px 14px;
+  }
+}
 
+/* Mobile */
+@media (max-width: 600px) {
+  .trust-row-inner { 
+    gap: 20px; 
+    max-width: 100%;
+  }
+  .trust-item { 
+    min-width: 84px; 
+  }
+  .trust-item img {
+    max-height: 40px;
+    height: clamp(32px, 8vw, 40px);
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .trust-row-inner {
+    gap: 16px;
+  }
+  .trust-item {
+    min-width: 76px;
+  }
+  .trust-item img {
+    max-height: 36px;
+    height: clamp(28px, 9vw, 36px);
+  }
+  .trust-item .microcopy {
+    font-size: 9px;
+  }
+  .trust-item.made-in-at {
+    font-size: 11px;
+    padding: 4px 12px;
+  }
+}
+
+/* Very Small Mobile */
+@media (max-width: 320px) {
+  .trust-row-inner {
+    gap: 12px;
+  }
+  .trust-item {
+    min-width: 68px;
+  }
+  .trust-item img {
+    max-height: 32px;
+    height: clamp(24px, 10vw, 32px);
+  }
+  .trust-item .microcopy {
+    font-size: 8px;
+  }
+  .trust-item.made-in-at {
+    font-size: 10px;
+    padding: 3px 10px;
+  }
+}
+/* Dark-Mode */
+@media (prefers-color-scheme: dark) {
+  .trust-row { border-top: 1px solid rgba(255,255,255,.08); }
+  .trust-item .microcopy { color: rgba(255,255,255,.7); }
+  .trust-item.made-in-at { background: rgba(255,255,255,.06); color: rgba(255,255,255,.7); }
+  .trust-item.made-in-at:hover { background: rgba(255,255,255,.12); color: rgba(255,255,255,.7); }
+  .trust-item img { filter: grayscale(100%) opacity(0.9) brightness(1.15); }
+}
