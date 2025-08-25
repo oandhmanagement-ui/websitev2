@@ -1,0 +1,23 @@
+URL: https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/standard-contractual-clauses-scc_en
+Status: 200 OK
+--- Headers ---
+accept-ranges: bytes
+age: 37
+cache-control: public, max-age=300, s-maxage=300
+connection: keep-alive
+content-encoding: gzip
+content-language: en
+content-length: 23134
+content-type: text/html; charset=UTF-8
+date: Mon, 25 Aug 2025 13:17:22 GMT
+expires: Sun, 19 Nov 1978 05:00:00 GMT
+strict-transport-security: max-age=31536000; includeSubDomains; preload;
+vary: Accept-Encoding
+via: 1.1 1a276be771f01064831eea4851319c28.cloudfront.net (CloudFront)
+x-age: 2373
+x-amz-cf-id: U-ipVStjvz_Vkh6bKESfIlXxF_6qAIYoAUNe9lPssEjEbZD8tiNjXg==
+x-amz-cf-pop: VIE50-C2
+x-cache: Hit from cloudfront
+x-content-type-options: nosniff
+x-fpfis: 14158830 14091862
+x-frame-options: SAMEORIGIN

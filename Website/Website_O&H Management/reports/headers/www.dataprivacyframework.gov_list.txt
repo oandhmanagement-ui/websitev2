@@ -1,0 +1,16 @@
+URL: https://www.dataprivacyframework.gov/list
+Status: 200 OK
+--- Headers ---
+accept-ranges: bytes
+content-encoding: gzip
+content-length: 1275
+content-type: text/html
+date: Mon, 25 Aug 2025 13:17:59 GMT
+etag: "04326635ef7db1:0"
+last-modified: Thu, 17 Jul 2025 21:04:30 GMT
+server: Microsoft-IIS/10.0
+set-cookie: ARRAffinity=3671ed4ea2b312664c31a1988ecc2e2dafedf84935c62792fde4fdff3fdfd02c;Path=/;HttpOnly;Secure;Domain=www.dataprivacyframework.gov
+set-cookie: ARRAffinitySameSite=3671ed4ea2b312664c31a1988ecc2e2dafedf84935c62792fde4fdff3fdfd02c;Path=/;HttpOnly;SameSite=None;Secure;Domain=www.dataprivacyframework.gov
+strict-transport-security: max-age=31536000; includeSubDomains
+vary: Accept-Encoding
+x-powered-by: ASP.NET

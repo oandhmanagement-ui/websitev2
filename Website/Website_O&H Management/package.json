@@ -7,7 +7,8 @@
     "audit": "node tools/audit/run-audit.cjs",
     "audit:base": "node tools/audit/run-audit.cjs --base",
     "audit:simple": "node tools/audit/simple-audit.cjs",
-    "audit:simple:base": "node tools/audit/simple-audit.cjs --base"
+    "audit:simple:base": "node tools/audit/simple-audit.cjs --base",
+    "headers": "node tools/headers/check.cjs"
   },
   "devDependencies": {
     "lighthouse": "^11.6.0",

@@ -1,0 +1,19 @@
+URL: https://support.stripe.com/questions/protection-of-european-data-transfers
+Status: 200 OK
+--- Headers ---
+connection: keep-alive
+content-encoding: gzip
+content-security-policy: base-uri 'none'; connect-src https://a.stripecdn.com https://a300.stripecdn.com https://api.stripe.com https://b.stripecdn.com https://errors.stripe.com https://files.stripe.com https://r.stripe.com https://stripe.com https://stripe.com/cookie-settings/enforcement-mode 'self'; default-src 'none'; font-src https://a.stripecdn.com https://b.stripecdn.com 'self'; form-action 'self'; frame-ancestors https://dashboard.stripe.com 'self'; frame-src https://a.stripecdn.com https://a300.stripecdn.com https://b.stripecdn.com https://connect.stripe.com https://dashboard-admin.stripe.com https://dashboard.stripe.com https://edge-support-conversations.stripe.com https://js.stripe.com https://recaptcha.google.com/recaptcha/ https://stripe.com https://support-conversations.stripe.com https://www.google.com/recaptcha/; img-src https://media.stripe.com https://t.stripe.com data: https://a.stripecdn.com https://a300.stripecdn.com https://b.stripecdn.com https://files.stripe.com https://q.stripe.com https://s3.amazonaws.com/stripe-uploads/ https://stripe-support-uploads.s3.amazonaws.com 'self'; media-src https://a.stripecdn.com https://b.stripecdn.com; script-src https://a.stripecdn.com https://a300.stripecdn.com https://b.stripecdn.com https://js.stripe.com https://stripe.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ 'sha256-2vvxOZGNaNgKc6hsklalFxowLrGGY77RhgtSdOmreSQ=' 'sha256-HhVIFMsFgQRGJz8hlmlQnV4vKOS5xlt8WH3+fHbAXuo=' 'sha256-K2e9YLbiYDExal2k3kiJ1pUsGkM9jorsz6q1rBeLbvQ' 'report-sample'; style-src https://a.stripecdn.com https://a300.stripecdn.com https://b.stripecdn.com https://stripe.com 'report-sample' 'self' 'sha256-0hAheEzaMe6uXIKV4EehS9pu1am1lj/KnnzrOYqckXk=' 'sha256-K4b1nkAuoFrcGc6ATIrRt4+EOt+8+l+Ggaih7c+huyM=' 'sha256-R0Fl7v6s1fPUcx+lm8fCUR4OcW2mWaO0qGRpvCnhzmM=' 'sha256-bMg/HaotHtrL4QIGhF/S0CiaXyfXX5agxpe+hpwTlis=' 'sha256-eJbJPdGJmBt51ONi84PboJu1iYWLtZAprJ9DTCN7bmY=' 'sha256-hffOIRpXvUek+gK0uocQDQY79nJZsVui9rGCGJ0J974=' 'sha256-rhCVbbGt++ztYg3mqAj6TmOAovUg5Otx5ahkz1Nd6O8=' 'unsafe-hashes'; upgrade-insecure-requests; report-uri https://q.stripe.com/csp-violation?q=QorVEUK96F1FZTme7bByP-0wQTZCNpHr3UIIU6u40HgXcfBk5cX8uiQ3QToyXUPv3H3591UDKLhFVrgfYA%3D%3D
+content-type: text/html;charset=utf-8
+cross-origin-opener-policy: same-origin-allow-popups; report-to="wsp_coop"
+cross-origin-opener-policy-report-only: same-origin-allow-popups; report-to="wsp_coop"
+date: Mon, 25 Aug 2025 13:17:57 GMT
+report-to: {"group":"wsp_coop","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/coop-report?s=QorVEUK96F1FZTme7bByP-0wQTZCNpHr3UIIU6u40HgXcfBk5cX8uiQ3QToyXUPv3H3591UDKLhFVrgfYA=="}],"include_subdomains":true},{"group":"wsp_coep","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/coep-report?s=QorVEUK96F1FZTme7bByP-0wQTZCNpHr3UIIU6u40HgXcfBk5cX8uiQ3QToyXUPv3H3591UDKLhFVrgfYA=="}],"include_subdomains":true}
+reporting-endpoints: wsp_coop="https://q.stripe.com/coop-report?s=QorVEUK96F1FZTme7bByP-0wQTZCNpHr3UIIU6u40HgXcfBk5cX8uiQ3QToyXUPv3H3591UDKLhFVrgfYA==",wsp_coep="https://q.stripe.com/coep-report?s=QorVEUK96F1FZTme7bByP-0wQTZCNpHr3UIIU6u40HgXcfBk5cX8uiQ3QToyXUPv3H3591UDKLhFVrgfYA=="
+server: nginx
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+transfer-encoding: chunked
+x-frame-options: SAMEORIGIN
+x-stripe-proxy-response: upstream
+x-stripe-server-rpc-duration-micros: 67381
+x-wc: ABCEFGHIJ
