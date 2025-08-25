@@ -29,6 +29,21 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Organization JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Organization",
+      "name":"O&H Management",
+      "url":"https://www.oandhmanagement.at",
+      "logo":"https://www.oandhmanagement.at/Images/Logo%20Image.png",
+      "sameAs":[]
+    }
+    </script>
+    
+    <!-- Hero Image Preload -->
+    <link rel="preload" as="image" href="Images/Logo%20Image.png" fetchpriority="high">
 </head>
 <body>
     <!-- Cookie Banner -->
@@ -290,6 +305,6 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html> 

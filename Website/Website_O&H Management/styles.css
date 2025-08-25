@@ -1064,3 +1064,100 @@ a:focus {
   .trust-item.made-in-at:hover { background: rgba(255,255,255,.12); color: rgba(255,255,255,.7); }
   .trust-item img { filter: grayscale(100%) opacity(0.9) brightness(1.15); }
 }
+
+/* Microcopy unter Kontaktformularen */
+.form-microcopy{
+  font-size: 0.875rem;
+  line-height: 1.35;
+  color: inherit;      /* übernimmt die Farbe der umgebenden Section */
+  margin-top: .5rem;   /* kleiner Abstand zum Formularabschluss */
+  opacity: .85;
+}
+
+/* --- Cookie Banner Responsive (unified) --- */
+:is(.cookie-banner, #cookie-banner, [data-cookie-banner]){
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+
+  padding: clamp(12px, 2.5vw, 20px);
+  padding-bottom: calc(clamp(12px, 2.5vw, 20px) + env(safe-area-inset-bottom));
+
+  z-index: 9999;
+  color: inherit;
+  background: inherit;
+}
+
+/* Innerer Container – falls vorhanden */
+:is(.cookie-banner, #cookie-banner, [data-cookie-banner]) :is(.cookie-banner__inner, .inner, .container){
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+/* Standard-Typo/Abstände für Text (Design erben) */
+:is(.cookie-banner, #cookie-banner, [data-cookie-banner]) p{
+  margin: 0;
+  line-height: 1.4;
+  color: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Buttons (tappable) */
+:is(.cookie-banner, #cookie-banner, [data-cookie-banner]) button,
+:is(.cookie-banner, #cookie-banner, [data-cookie-banner]) a.button,
+:is(.cookie-banner, #cookie-banner, [data-cookie-banner]) [role="button"]{
+  min-height: 40px;
+  padding: 8px 14px;
+  line-height: 1.2;
+}
+
+/* Fokus sichtbar für Accessibility */
+:is(.cookie-banner, #cookie-banner, [data-cookie-banner]) :is(button, a, [role="button"]):focus-visible{
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* Tablet & kleiner: Spalten untereinander, Buttons 100% Breite */
+@media (max-width: 1024px){
+  :is(.cookie-banner, #cookie-banner, [data-cookie-banner]) :is(.cookie-banner__inner, .inner, .container){
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  :is(.cookie-banner, #cookie-banner, [data-cookie-banner]) .cookie-banner__text{
+    max-width: 100%;
+    text-align: left;
+  }
+  :is(.cookie-banner, #cookie-banner, [data-cookie-banner]) :is(button, a.button, [role="button"]){
+    width: 100%;
+  }
+}
+
+/* Phone: kompaktere Paddings */
+@media (max-width: 600px){
+  :is(.cookie-banner, #cookie-banner, [data-cookie-banner]){
+    padding: 12px;
+    padding-bottom: calc(12px + env(safe-area-inset-bottom));
+  }
+}
+
+/* Bewegungen reduzieren, falls Nutzer dies bevorzugen */
+@media (prefers-reduced-motion: reduce){
+  :is(.cookie-banner, #cookie-banner, [data-cookie-banner]) *{
+    transition: none !important;
+    animation: none !important;
+  }
+}
+/* --- End Cookie Banner Responsive (unified) --- */

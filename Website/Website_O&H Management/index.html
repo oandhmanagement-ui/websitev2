@@ -34,6 +34,21 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Organization JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Organization",
+      "name":"O&H Management",
+      "url":"https://www.oandhmanagement.at",
+      "logo":"https://www.oandhmanagement.at/Images/Logo%20Image.png",
+      "sameAs":[]
+    }
+    </script>
+    
+    <!-- Hero Image Preload -->
+    <link rel="preload" as="image" href="Images/Logo%20Image.png" fetchpriority="high">
 </head>
 <body>
     <!-- Cookie Banner -->
@@ -167,7 +182,7 @@
             <div class="projekte-grid">
                 <div class="projekt-card">
                     <div class="projekt-image">
-                        <img src="Images/Website Handwerk.png" alt="SEO-optimierte Website Handwerk" class="projekt-img">
+                        <img src="Images/Website Handwerk.png" alt="SEO-optimierte Website Handwerk" class="projekt-img" loading="lazy" decoding="async">
                     </div>
                     <div class="projekt-content">
                         <h3>SEO-optimierte Website</h3>
@@ -176,7 +191,7 @@
                 </div>
                 <div class="projekt-card">
                     <div class="projekt-image">
-                        <img src="Images/Corporate Branding Muscent.png" alt="Corporate Branding Muscent" class="projekt-img">
+                        <img src="Images/Corporate Branding Muscent.png" alt="Corporate Branding Muscent" class="projekt-img" loading="lazy" decoding="async">
                     </div>
                     <div class="projekt-content">
                         <h3>Corporate Branding Muscent</h3>
@@ -185,7 +200,7 @@
                 </div>
                 <div class="projekt-card">
                     <div class="projekt-image">
-                        <img src="Images/Social Media Kampagne.jpg" alt="Social Media Kampagne" class="projekt-img">
+                        <img src="Images/Social Media Kampagne.jpg" alt="Social Media Kampagne" class="projekt-img" loading="lazy" decoding="async">
                     </div>
                     <div class="projekt-content">
                         <h3>Social Media Kampagne</h3>
@@ -230,6 +245,7 @@
                         </div>
                         <button type="submit" class="btn btn-primary">Nachricht senden</button>
                     </form>
+                    <p class="form-microcopy" aria-hidden="false">Ihre Daten sind SSL-verschlüsselt</p>
                 </div>
                 <div class="kontakt-info">
                     <div class="kontakt-item">
@@ -329,6 +345,6 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html> 

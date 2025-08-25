@@ -4,3 +4,55 @@
 
 [functions]
   directory = "netlify/functions"
+
+# ---------- Security Headers (global) ----------
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), camera=(), microphone=(), payment=(), interest-cohort=()"
+    # CSP: passe Quellen an, falls weitere CDNs/Services genutzt werden
+    Content-Security-Policy = "default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com; frame-ancestors 'none'; upgrade-insecure-requests"
+
+# ---------- Caching ----------
+# HTML: immer frisch (keine aggressive Cachebarkeit)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
+
+# Hashed/static Assets: 1 Jahr + immutable
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000" # 30 Tage, falls nicht hash-basiert
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/favicon.ico"
+  [headers.values]
+    Cache-Control = "public, max-age=604800" # 7 Tage
+
+# ---------- Compression Plugin ----------
+[[plugins]]
+  package = "netlify-plugin-compress"
+
+  [plugins.inputs]
+    gzip = true
+    brotli = true
+    # welche Dateien vor-komprimiert werden sollen
+    exclude = [ "*.html" ]  # HTML lässt Netlify dynamisch komprimieren
+    # Assets-Globs (bei Bedarf anpassen)
+    paths = [ "assets", "images", "fonts", "styles.css", "script.js" ]

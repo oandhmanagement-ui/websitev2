@@ -1,0 +1,42 @@
+{
+  "url": "https://www.oandhmanagement.at",
+  "timestamp": "2025-08-22T11:45:52.628Z",
+  "headers": {
+    "cache-control": {
+      "ok": false,
+      "value": "no-cache",
+      "name": "Cache Control"
+    },
+    "content-encoding": {
+      "ok": false,
+      "value": "MISSING",
+      "name": "Compression"
+    },
+    "x-content-type-options": {
+      "ok": false,
+      "value": "MISSING",
+      "name": "X-Content-Type-Options"
+    },
+    "referrer-policy": {
+      "ok": false,
+      "value": "MISSING",
+      "name": "Referrer Policy"
+    },
+    "strict-transport-security": {
+      "ok": true,
+      "value": "max-age=31536000",
+      "name": "HSTS"
+    },
+    "x-powered-by": {
+      "ok": true,
+      "value": "MISSING",
+      "name": "X-Powered-By (hidden)"
+    }
+  },
+  "performance": {
+    "ttfb": 334,
+    "size": 19,
+    "requests": 1,
+    "score": 100
+  }
+}

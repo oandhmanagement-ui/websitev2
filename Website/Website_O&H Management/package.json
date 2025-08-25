@@ -1,0 +1,20 @@
+{
+  "name": "oh-management-website",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "description": "O&H Management Website mit Audit-Tools",
+  "scripts": {
+    "audit": "node tools/audit/run-audit.cjs",
+    "audit:base": "node tools/audit/run-audit.cjs --base",
+    "audit:simple": "node tools/audit/simple-audit.cjs",
+    "audit:simple:base": "node tools/audit/simple-audit.cjs --base"
+  },
+  "devDependencies": {
+    "lighthouse": "^11.6.0",
+    "chrome-launcher": "^1.1.0",
+    "undici": "^5.28.0",
+    "picocolors": "^1.0.0",
+    "fs-extra": "^11.2.0",
+    "puppeteer": "^21.0.0"
+  }
+}
